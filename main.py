@@ -9,22 +9,19 @@ import pyttsx3 as a
 from twilio.rest import Client
 
 
+sid = '********************'
+token = '********************'
+number1 = '+182******'
+number2 = '+91733*******'
 
-# url = 'http://192.168.106.29.8080/video'
+client = Client(sid, token)
 
-# sid = 'AC999400c5bf75a2473eef8cdc8870c3a7'
-# token = '5c2b1872f99bcb1f0ce5bb387cbddf7f'
-# number1 = '+18289291199'
-# number2 = '+917338218329'
-
-# client = Client(sid, token)
-
-# def message(msg):
-#     message = client.messages.create(
-#         body= f"{msg} detected!!",
-#         from_=number1,
-#         to=number2
-#     )
+def message(msg):
+    message = client.messages.create(
+        body= f"{msg} detected!!",
+        from_=number1,
+        to=number2
+    )
 
 # Function to speak using text-to-speech
 def speak(aa):
