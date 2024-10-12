@@ -1,0 +1,6 @@
+opencv-python
+cvzone
+ultralytics
+imutils
+pyttsx3
+twilio
